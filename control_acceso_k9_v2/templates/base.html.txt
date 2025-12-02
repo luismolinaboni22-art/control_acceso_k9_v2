@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Control de Acceso K9</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="nav">
+        <a href="/">Inicio</a>
+        {% if current_user.is_authenticated %}
+        <a href="/logout">Cerrar sesión</a>
+        {% endif %}
+    </div>
+
+    {% block content %}{% endblock %}
+</body>
+</html>
