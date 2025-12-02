@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Bienvenido al sistema Corporación K9</h2>
+<p>Sistema en funcionamiento.</p>
+{% endblock %}
